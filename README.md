@@ -11,6 +11,8 @@ To design and simulate an Astable Multivibrator using NE555 in Proteus Design Su
 •	CRO / Oscilloscope
 •	Connecting wires
 ## Circuit Diagram
+<img width="1917" height="1055" alt="Screenshot 2026-02-13 085043" src="https://github.com/user-attachments/assets/c8b896d2-2574-4a73-81e5-358faf95ea1a" />
+
 Pin Configuration of 555 Timer:
 •	Pin 1 → Ground
 •	Pin 2 → Trigger
@@ -37,8 +39,17 @@ Pin Configuration of 555 Timer:
 6.	Observe square wave output at Pin 3.
 7.	Measure time period and frequency.
 ## Tabulation
-S.No	        R1 (kΩ)	      R2 (kΩ)	       C (µF)	        Theoretical Frequency	          Practical Frequency
+| S.No | R1 (kΩ) | R2 (kΩ) | C (µF) | Theoretical Frequency (Hz) | Practical Frequency (Hz) |
+| ---- | ------- | ------- | ------ | -------------------------- | ------------------------ |
+| 1    | 7.2     | 3.6     | 0.1    | 1000 Hz                    | ≈ 980 Hz                 |
+| 2    | 7.2     | 3.6     | 0.01   | 10000 Hz                   | ≈ 9.8 kHz                |
+| 3    | 5       | 5       | 0.1    | 960 Hz                     | ≈ 940 Hz                 |
+| 4    | 10      | 5       | 0.1    | 720 Hz                     | ≈ 700 Hz                 |
+| 5    | 15      | 10      | 0.1    | 400 Hz                     | ≈ 380 Hz                 |
+
 ## Waveforms
+<img width="1377" height="876" alt="Screenshot 2026-02-13 084812" src="https://github.com/user-attachments/assets/42fcbb50-bdc3-4b92-bf45-e5059b8f613f" />
+
 •	Output (Pin 3) → Square wave
 •	Capacitor voltage → Exponential charging & discharging waveform
 ## Result
@@ -56,3 +67,12 @@ The practical frequency closely matches the theoretical frequency.
 3.	Write the frequency formula.
 4.	What is duty cycle?
 5.	What happens if R2 increases?
+## Answers
+1.The 555 timer operates in monostable, astable, and bistable modes. Monostable produces one pulse, astable produces continuous square waves, and bistable acts like a flip-flop.<br>
+2.In astable mode, the capacitor charges up to 2/3 Vcc and discharges down to 1/3 Vcc. These levels control the switching action.<br>
+3.The frequency of 555 in astable mode is
+  <img width="229" height="86" alt="image" src="https://github.com/user-attachments/assets/9f455d66-abd2-4fd4-afee-0fa414409270" /><br>
+4.Duty cycle is the percentage of time the output remains HIGH in one complete cycle.<br>
+5.If R2 increases, frequency decreases and duty cycle increases.<br>
+
+  
